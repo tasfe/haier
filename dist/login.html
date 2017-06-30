@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	<link rel="stylesheet" type="text/css" href="css/commen.css"/>
+	<script type="text/javascript" src = "js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src = "js/jquery.cookie.js"></script>
+	<script type="text/javascript" src = "js/login.js"></script>
+</head>
+<body>
+	<div class = "header">
+		<div class = logo>
+			<div class = "one">
+				<a class = "logo1" href="index.html" ,title = "海尔商城-买家电更放心">
+					<img  src = "image/login/index.png"/>
+				</a>
+				<img  src = "image/login/slogan.png" class = "slogan"/>
+			</div>
+			
+		</div>
+	</div>
+	<div class = "main">
+		<div class = "login">
+			<div class = "login_body">
+				<h2 >欢迎登录海尔商城   <a href="register.html"><span>免费注册></span></a></h2>
+				
+				<div class="login_tab">
+					<div class = "login_tab_main">
+						<span id = "commen" class = "active">普通登录</span>
+						<span id = "phone" class = "con">手机动态密码登录</span>
+					</div>
+					<div  id ="commen_body" >
+					<!-- <i class="iconfont icon-denglu_yonghuming"></i> -->
+						<p ><input id = "username" type = "text" name = "username" placeholder="邮箱 / 手机" class = "input_commen"/></p>
+						<span id ="user_error">&nbsp;</span>
+						<p ><input id = "password" class = "input_commen" type = "password" name = "password" placeholder="密码" /></p>
+						<span id ="pass_error">&nbsp;</span>
+						<p id = "remmber"><input type = "checkbox" id = "check" />
+						<span>两周内免登录</span>
+						<a href = "#" >忘记密码？</a></p>
+						<p><input type = "button" id = "submit_commen" value="登录" /></p>
+
+					</div>
+					<div id = "phone_body" style = "display:none">
+						<p ><input id ="user_phone" type = "text" placeholder = "请输入手机号" class = "input_commen"/></p>
+						<span id ="userphone_error">&nbsp;</span>
+						<p class = "user">
+							<input id ="code" type = "text" placeholder ="请输入手机验证码" class = "input_commen">
+							<span style="color:#ddd">|</span>
+							<a id ="code_get" href = "#">获取验证码</a>
+						</p>
+						<span id ="code_error">&nbsp;</span>
+						<p><input type = "button" id = "submit_phone" value="登录" /></p>
+					</div>
+					
+				</div>
+				<div class = "other">
+						<ul >
+							<li>其他方式登录：</li>
+							<li><a href = "#" class = "harei">海尔官网</a></li>
+							<li><a href = "#" class = "weibo">新浪微博</a></li>
+							<li><a href = "#" class = "qq">QQ</a></li>
+							<li><a href = "#" class = "zhifubao">支付宝</a></li>
+							<li><a href = "#" class = "wangyi">网易</a></li>
+							<li><a href = "#" class = "kuaijietong">快捷通</a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	<div class = "footer">
+		
+		<p>
+			<a href="#">购物流程</a> |
+			<a href="#">配送方式</a> |
+			<a href="#">付款方式</a> |
+			<a href="#">售后服务</a> |
+			<a href="#">投诉建议</a> |
+			<a href="#">友情链接</a> |
+			<a href="#">加入我们</a> |
+			<a href="#">海尔知识堂</a>
+		</p>
+		<p>网站备案/许可证号：鲁ICP备09096283号</p>
+		<p>Copyright©2000-2016 海尔集团电子商务有限公司 All Rights Reserved</p>
+		<p>
+			<a href="#"><img src = "image/login/7.png"/></a>
+			<a href="#"><img src = "image/login/3.png"/></a>
+			<a href="#"><img src = "image/login/4.png"/></a>
+			<a href="#"><img src = "image/login/5.png"/></a>
+			<a href="#"><img src = "image/login/6.png"/></a>
+			<a href="#"><img src = "image/login/1.jpg"/></a>
+			<a href="#"><img src = "image/login/2.jpg"/></a>
+		</p>
+	</div>
+</body>
+</html>

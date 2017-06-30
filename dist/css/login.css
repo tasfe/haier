@@ -1,0 +1,194 @@
+
+/*login*/
+.main{
+	position: relative;
+	width:100%;
+	height: 540px;
+	background: url(../image/login/pic.png) no-repeat center center;
+}
+.login{
+	background: #fff;
+	width:490px;
+	position: absolute;
+	border:1px solid #ddd;
+	border-radius: 3px;
+	right:204px;
+	top:40px;
+	box-shadow:-4px -5px 1px #ddd, -4px 4px 1px #ddd;
+}
+.login .login_body h2{
+	font-weight: normal;
+	font-size: 22px;
+	padding:25px 0px 15px 15px;
+	border-bottom:1px solid #ddd;
+}
+.login .login_body h2 a{
+	padding-left:222px;
+	font-size: 12px;
+	color:#005aaa;
+	line-height: 20px;
+}
+.login .login_tab{
+	width:260px;
+	margin: 0 auto;
+	/*background: red;*/
+}
+#commen,#phone{
+	float: left;
+	font-size:14px;
+	width:130px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+
+	margin-bottom: 35px;
+	cursor: pointer;
+}
+.con{
+	color:#606060;
+	border-bottom: 2px solid #e4e4e4;
+}
+.active{
+	color:#32beff;
+	border-bottom: 2px solid #32beff;
+}
+#commen:hover,#phone:hover,#remmber{
+	color:#606060;
+}
+#commen_body{
+	padding-top:35px;
+	width:260px;
+}
+
+#username,#password,#user_phone{
+	width:217px;
+	padding:3px 3px 3px 38px;
+	height: 26px;
+	font-size:14px;
+	line-height: 26px;
+	border:1px solid #e4e4e4;
+	border-radius: 3px;
+	/*获取焦点时去掉边框*/
+	outline:none;
+}
+#user_error,#pass_error,#userphone_error,#code_error{
+	display: block;
+	padding:1px 0;
+	font-size:10px;
+	color: red;
+}
+#remmber{
+	padding: 3px 0;
+	height: 20px;
+	font-size:10px;
+}
+#remmber a{
+	color: #005aaa;
+	padding-left:106px;
+}
+#remmber a:hover,.login .login_body h2 a:hover{
+	text-decoration: underline;
+}
+#submit_commen,#submit_phone{
+	margin-top: 2px;
+	width: 100%;
+	padding:8px 0;
+	height: 40px;
+	background: #32beff;
+	color:white;
+	cursor:pointer;
+	border:none;
+	font-size:16px;
+	border-radius: 5px;
+	margin-bottom:20px;
+}
+#submit_commen:hover,#submit_phone:hover{
+	background: #005aaa;
+}
+#username{
+	background: url(../image/login/yh.png) no-repeat 12px center;
+}
+#password{
+	background: url(../image/login/mm.png) no-repeat 12px center;
+}
+#user_phone{
+	background: url(../image/login/phone.png) no-repeat 12px center;
+}
+#code{
+	background: url(../image/login/code.png) no-repeat 12px center;
+}
+#code{
+	width:112px;
+	border:none;
+	outline:none;
+	padding:8px 3px 8px 38px;
+}
+.user{
+	border:1px solid #e4e4e4;
+	border-radius: 3px;
+	height: 32px;
+	line-height: 32px;
+}
+#code_get{
+	padding-left:18px;
+	font-size:12px;
+	color:#32beff;
+}
+#code_get:hover{
+	color: #005aa9;
+}
+.main .other{
+	border-top:1px solid #e4e4e4;
+	padding:14px 0;
+	height: 20px;
+}
+.main .other ul li{
+	font-size:10px;
+	display: inline-block;
+	height: 20px;
+	color:#606060;
+}
+.main ul li a{
+	color: black;
+	padding-left:25px;
+	color:#606060;
+}
+.main ul li a:hover{
+	color:#005aa9;
+	text-decoration: underline;
+}
+.main ul li:nth-child(1){
+	padding-left:5px;
+}
+.main ul li:nth-child(2){
+	background: url(../image/login/icon.png) no-repeat left -570px;
+}
+.main ul li:nth-child(3){
+	background: url(../image/login/icon.png) no-repeat 0px -154px;
+	
+}
+.main ul li:nth-child(4){
+	background: url(../image/login/icon.png) no-repeat 0px -259px;
+	
+}
+.main ul li:nth-child(5){
+	background: url(../image/login/icon.png) no-repeat 0px -222px;
+	
+}
+.main ul li:nth-child(6){
+	background: url(../image/login/icon.png) no-repeat 0px -342px;
+	
+}
+.main ul li:nth-child(7){
+	background: url(../image/login/icon.png) no-repeat 0px 0px;
+	
+}
+
+
+
+
+
+
+
+
+

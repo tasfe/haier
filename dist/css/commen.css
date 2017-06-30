@@ -1,0 +1,87 @@
+
+html,body,p,div,ul,li,ol,dl,dt,dd,table,tr,td,form,h1,h2,h3,h4,h5,h6,img,input,hr{
+	margin: 0;
+	padding: 0;
+}
+html body{
+	width:100%;
+	height:100%;
+	}
+body{
+	font-family: "微软雅黑",Arial;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: none;
+}
+ul li{
+	list-style: none;
+}
+
+/*header*/
+.header{
+	width:100%;
+	height:90px;
+	border-bottom:1px solid #f2f2f2;
+}
+.header .logo{
+	margin: 0 auto;
+	width:1000px;
+	/*background: red;*/
+	padding:20px 0px 20px 10px;
+	overflow: hidden;
+	
+}
+.header .one{
+	float: left;
+	width: 320px;
+	height: 49px;
+	position: relative;
+}
+.logo .logo1{
+	float:left;
+	margin-top:6px;
+	width:150px;
+	
+}
+.logo .logo1 .slogan{
+	width:170px;
+	height: 60px;
+	/*float: left;*/
+	position: absolute;
+	top:-5px;
+	right: 0px;
+}
+
+
+/*footer*/
+.footer{
+	margin-top: 50px;
+	padding:20px 0 10px;
+	background: #e1e1e1;
+	text-align: center;
+	width: 100%;
+}
+.footer p{
+	color: #606060;
+	font-size:10px;
+	line-height:24px;
+}
+.footer p:nth-child(1) a{
+	font-size:10px;
+	color:#606060;
+}
+.footer p:nth-child(1) a:hover{
+	color:#005aa9;
+	text-decoration: underline;
+}
+.footer p:nth-child(4) img{
+	padding-top:10px;
+	height: 40px;
+}
+
+
+
+

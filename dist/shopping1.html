@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>海尔 冰箱 BCD-458WDVMU1</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/shopping.css"/>
+	<script type="text/javascript" src = "js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src = "js/jquery.cookie.js"></script>
+	<script type="text/javascript" src = "js/index.js"></script>
+	<script type="text/javascript" src = "js/shopping_ajax1.js"></script>
+	<script type="text/javascript" src = "js/shopping_commen.js"></script>
+	<!-- <script type="text/javascript" src = "js/shopping.js"></script> -->
+	<!-- <script type="text/javascript" src = "js/require.js" defer async = "true" data-main = "js/main"></script> -->
+</head>
+<body>
+<div class = "top">
+		<div class = "top_con">
+			<div class = "left">
+				<span>切换城市 :</span>
+				<span>青岛</span>
+				<a href="#" class = "first_a">收藏海尔商城</a>
+				<span>
+					<a href="#" id = "two_a">微信
+						<img id = "image_one"  alt="海尔商城微信二维码" src = "image/index/qrehaier.png"/>
+					</a>
+				
+				</span>
+				<span>
+					<a href="#" id = "three_a">顺逛商城
+					<img id = "image_two"  alt="海尔商城微信二维码" src = "image/index/ehaierapp.png"/>
+					</a>
+					
+				</span>
+			</div>
+			<div class = "right">
+				<span>嗨，欢迎来到海尔官方商城 请</span>
+				<a href="login.html">登录</a> | 
+				<a href="register.html">免费注册</a>  
+				<a href="#">我的订单</a> |
+				<a href="#">帮助中心</a> |
+				<a href="#">企业采购</a> |
+				<a href="#">互动社区</a> |
+				<a href="#">海尔官网</a>
+			</div>
+		</div>
+	</div>
+	<div class = "header">
+		<div class = "one">
+			<a class = "logo1" href="index.html" ,title = "海尔商城-买家电更放心">
+				<img  src = "image/icon/base.png"/>
+			</a>
+			<img height="60px" src = "image/index/11.png" class = "slogan" id ="slogan"/>
+
+
+		</div>
+		<div class = "search">
+			<form method="get" action ="http://search.ehaier.com/s">
+				<input class = "search_val" type = "text" autocomplete="off"  placeholder="【618家电狂欢节】"/>
+				<input type = "button" class="search_btn"/>
+			</form><br/>
+			<div class = "hot_words">
+				<span style="font-weight: bold;">热门搜索:</span>
+				<a href="#">618年中促</a>
+				<a href="#">智能空调</a>
+				<a href="#">冰箱</a>
+				<a href="#">热水器</a>
+				<a href="#">智能彩电</a>
+				<a href="#">滚筒洗衣机</a>
+				<a href="#">冷柜</a>
+			</div>
+			
+		</div>
+		<div class = "search_right">
+			<a href="#">货到付款</a>
+			<a href="#">送装同步</a>
+			<a href="#">全国联保</a>
+		</div>
+	</div>
+	<!-- menu -->
+	<div class = "menu">
+		<div class = "menu_con">
+			<div class ="menu_a">
+				<a href="#">首页</a>
+				<a href="#">有好货<span>&nbsp;</span></a>
+				<a href="#">精品预售</a>
+				<a href="#">定制</a>
+				<a href="#">会员<span>&nbsp;</span></a>
+				<a href="#">社区</a>
+				<a href="#">线下体验店</a>
+			</div>
+			<div class = "sort_left_aside">
+				<div class = "left_title">商品分类</div>
+				<div class = "aside">
+					<ul class = "aside_ul">
+						<li class = "lie"><a href = "#">冰箱<i class="iconfont icon-youjiantou-copy"></i></a></li>
+						<li class = "liw"><a href = "#">空调<i class="iconfont icon-youjiantou-copy"></i></a></li>
+						<li><a href = "#">洗衣机<i class="iconfont icon-youjiantou-copy"></i></a></li>
+						<li><a href = "#">电视<i class="iconfont icon-youjiantou-copy"></i></a></li>
+						<li><a href = "#">热水器<i class="iconfont icon-youjiantou-copy"></i></a></li>
+						<li><a href = "#">厨房电器<i class="iconfont icon-youjiantou-copy"></i></a></li>
+						<li><a href = "#">冷柜<i class="iconfont icon-youjiantou-copy"></i></a></li>
+						<li><a href = "#">智能产品<i class="iconfont icon-youjiantou-copy"></i></a></li>
+						<li><a href = "#">生活小家电<i class="iconfont icon-youjiantou-copy"></i></a></li>
+						<li><a href = "#">厨房小家电<i class="iconfont icon-youjiantou-copy"></i></a></li>			
+						<li><a href = "#">水家电/母婴/家庭医疗<i class="iconfont icon-youjiantou-copy"></i></a></li>
+					</ul>
+				</div>
+			</div>
+	</div>
+		<div class = "shop_car">
+			<div class = "shop_car_con">
+				<i class="iconfont icon-gouwuche"></i>
+				<span>购物车</span>
+			</div>
+			<div class = "shop_car_show">
+				<p class = "shop_car_p">您还没挑选商品哦，赶紧行动吧！</p>
+				<ul class ="goods_show">
+					
+				</ul>
+			</div>
+		</div>
+</div>
+
+	<!-- banner -->
+	<div class = "banner">
+	
+		<!-- 冰箱 -->
+		<div class = "tab_commen tab_one" style="display: none;">
+			<div class = "c_content" style="width:447px;">
+				<div class = "content_left" >
+					<ul class = "content_ul_l tab_one_l">
+				
+					</ul>
+				</div>
+				<div class = "content_right" >
+					<ul class = "content_ul_r tab_one_r">
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 空调 -->
+		<div class = "tab_commen tab_two" style="display: none;" >
+			<div class = "c_content" style="width: 654px;">
+				<div class = "content_left" style="width: 414px" >
+					<p>家用空调</p>
+					<ul class = "content_ul_l tab_two_l tab_two_l_one">				
+					</ul>
+					<p>家用中央空调</p>
+					<ul class = "content_ul_l tab_two_l tab_two_l_two">				
+					</ul>
+				</div>
+				<div class = "content_right" >
+					<ul class = "content_ul_r tab_two_r">
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 洗衣机 -->
+		<div class = "tab_commen tab_three" style="display: none;">
+			<div class = "c_content" style="width:447px;">
+				<div class = "content_left" >
+					<ul class = "content_ul_l tab_three_l"></ul>
+				</div>
+				<div class = "content_right" >
+					<ul class = "content_ul_r tab_three_r"></ul>
+				</div>
+			</div>
+		</div>
+		<!-- 电视 -->
+		<div class = "tab_commen tab_four" style="display: none;">
+			<div class = "c_content" style="width:447px;">
+				<div class = "content_left" >
+					<ul class = "content_ul_l tab_four_l"></ul>
+				</div>
+				<div class = "content_right" >
+					<ul class = "content_ul_r tab_four_r"></ul>
+				</div>
+			</div>
+		</div>
+		<!-- 热水器 -->
+		<div class = "tab_commen tab_five" style="display: none;">
+			<div class = "c_content" style="width:447px;">
+				<div class = "content_left" >
+					<ul class = "content_ul_l tab_five_l"></ul>
+				</div>
+				<div class = "content_right" >
+					<ul class = "content_ul_r tab_five_r"></ul>
+				</div>
+			</div>
+		</div>
+		<!-- 厨房电器 -->
+		<div class = "tab_commen tab_six" style="display: none;">
+			<div class = "c_content" style="width:447px;">
+				<div class = "content_left" >
+					<ul class = "content_ul_l tab_six_l"></ul>
+				</div>
+				<div class = "content_right" >
+					<ul class = "content_ul_r tab_six_r"></ul>
+				</div>
+			</div>
+		</div>
+		<!-- 冷柜 -->
+		<div class = "tab_commen tab_seven" style="display: none;">
+			<div class = "c_content" style="width:207px;">
+				<div class = "content_left" >
+					<ul class = "content_ul_l tab_seven_l"></ul>
+				</div>
+				<div class = "content_right" >
+					<ul class = "content_ul_r tab_seven_r"></ul>
+				</div>
+			</div>
+		</div>
+		<!-- 智能产品 -->
+		<div class = "tab_commen tab_eight" style="display: none;">
+			<div class = "c_content" style="width:207px;">
+				<div class = "content_left" >
+					<ul class = "content_ul_l tab_eight_l"></ul>
+				</div>
+				<div class = "content_right" >
+					<ul class = "content_ul_r tab_eight_r"></ul>
+				</div>
+			</div>
+		</div>
+		<!-- 生活小家电 -->
+		<div class = "tab_commen tab_nine" style="display: none;">
+			<div class = "c_content" style="width:207px;">
+				<div class = "content_left" >
+					<ul class = "content_ul_l tab_nine_l"></ul>
+				</div>
+				<div class = "content_right" >
+					<ul class = "content_ul_r tab_nine_r"></ul>
+				</div>
+			</div>
+		</div>
+		<!-- 厨房小家电 -->
+		<div class = "tab_commen tab_ten"  style="display: none;">
+			<div class = "c_content" style="width:414px;">
+				<div class = "content_left" >
+					<ul class = "content_ul_l tab_ten_l">
+					</ul>
+					<ul class = "tab_ten_r">	
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- 水家电 -->
+		<div class = "tab_commen tab_ele" style="display: none;">
+			<div class = "c_content" style="width:414px;">
+				<div class = "content_left" >
+					<p>水家电</p>
+					<ul class = "content_ul_l tab_ele_l tab_ele_l_one">
+				
+					</ul>
+					<p>母婴家电</p>
+					<ul class = "content_ul_l tab_ele_l tab_ele_l_two">
+				
+					</ul>
+					<p>家庭医疗</p>
+					<ul class = "content_ul_l tab_ele_l tab_ele_l_three">
+				
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+
+
+		<!-- 正文 -->
+
+		<div class = "shop_main">
+			<div class = "shop_main_con">
+			
+			</div>
+		</div>
+		<div class = "shop_box">
+			<div class = "shop_pic">
+				<div class = "shop_pic_one">
+					<div id = "mask_pic"></div>
+					<div class = "me_pic">
+					
+					</div>
+					<div id = "position_pic"></div>
+				</div>
+				<div class = "scale">
+					<div id = "b_pic">
+						
+					</div>
+						
+				</div>
+
+				<a href = "#" class = "error_pic">查看大图</a>	
+				<div class = "shop_pic_two">
+					<div class = "small_pic">
+						<ul class = "small_pic_con">
+							
+						</ul>
+					</div>
+					<span class = "font font_three"><i class="iconfont icon-zuojiantou icon_left_one"></i></span>
+					<span class = "font font_four"><i class="iconfont icon-youjiantou icon_right_one"></i></span>
+				</div>
+				<p class="pp"><span>分享</span>
+				<a href="#" class = "a_1"></a>
+				<a href="#" class = "a_2"></a>
+				<a href="#" class = "a_3"></a>
+				<a href="#" class = "a_4"></a>
+				<a href= "#" class = "a_5">收藏</a>
+				</p>
+			</div>
+			<div class = "shop_info">
+			
+			</div>
+	
+	</div>
+</div>
+	<div class = "introduce" >
+		<div class = "introduce_con" >
+			<div class = "intro_menu" >
+				<ul class = "intro_menu_con">
+					<li class = "goods_intro">商品介绍</li>
+					<li class = "goods_type">规格参数</li>
+					<li class = "gonds_service">配送服务</li>
+					<li class = "godds_cont">评价与晒单</li>
+				</ul>
+				<span class = "buy_button buy_button_two">加入购物车</span>
+				<div class = "intro_goods_show">
+					<div><img src = "image/shopping/buy.jpg" /></div>
+					<div>
+						<span>海尔冰箱 BCD-458WDVMU1 </span><br/><br/>
+						<span>商城价</span><span>￥4499</span>
+					</div>
+				</div>
+			</div>
+			<div class = "feature">
+				<ul class = "feature_con">
+					<li>· 特色：全场免运费、送货上门、送装同步</li>
+					<li>· 配送：海尔物流及快递 </li>
+					<li>· 区域：覆盖2576个地区（至乡镇村，不含港澳台）　　</li>
+					<li>· 售后：全国联保，七天退换</li>
+				</ul>
+			</div>
+			<!-- 商品介绍 -->
+			<div class = "intro_goods intro_commen">
+				<div class = "intro_goods_header"></div>	
+				<div class = "intro_pic">
+					
+				</div>	
+				<div class = "intro_pic_two">
+					
+				</div>
+				<div class = "intro_pic_three">
+					<div class = "intro_pic_four">
+						<img src = "image/shopping/i1.jpg" class ="img_one" />
+						<a href = "#"  ><img src = "image/shopping/i2.jpg" /></a>
+					</div>
+					<img src = "image/shopping/i3.jpg"/>
+					<br/>
+					<br/>
+					<img src = "image/shopping/i4.jpg"/>
+					<div class = "intro_pic_five">
+						<img src = "image/shopping/i5.jpg"/>
+						<img src = "image/shopping/i6.jpg"/>
+						<img src = "image/shopping/i7.jpg"/>
+						<img src = "image/shopping/i8.jpg"/>
+					</div>
+				</div>	
+			</div>
+			<!-- 规格参数 -->
+			<div class = "type_goods intro_commen" style="display: none">
+				<p >规格参数</p>
+				<table 	cellpadding="0" cellspacing="0" class = "type_goods_table">
+					<tbody >
+				
+					</tbody>
+				</table>
+			</div>
+		
+			<!-- 配送服务 -->
+			<div class = "service_goods intro_commen" style="display: none">
+				<table cellspacing="0" cellpadding="0" >
+					<tbody>
+						<tr class = "tr_header">
+							<td>官方正品</td>
+							<td>全场免运费</td>
+							<td>关于发票</td>
+						</tr>
+						<tr class = "tr_body">
+							<td>海尔商城是海尔集团旗下唯一官方网上专卖店，不销售任何样品机、次品机、翻新机。</td>
+							<td>支持配送范围内全场包邮，免费送货上门并提供送装一体化服务！</td>
+							<td>所有产品均开具正规电子发票，符合一般纳税人资质的公司开具增值税发票需要提供开票资料，审核无误后开具。</td>
+						</tr>
+						<tr class = "tr_header">
+							<td>支付方式</td>
+							<td>配送方式</td>
+							<td>售后保障</td>
+						</tr>
+						<tr class = "tr_body">
+							<td>支持多种支付方式，如银联在线、支付宝、财富通、也可线下办理转账汇款。</td>
+							<td>大家电产品主要依托日日顺物流配送，手机、数码、生活家电等采用快递公司作为配送方。</td>
+							<td>售后享受全国联保，需要时请拨打24小时服务热线4006-999 999。</td>
+						</tr>
+						<tr class = "tr_header">
+							<td>配送范围</td>
+							<td>送货时间</td>
+							<td>7天退货</td>
+						</tr>
+						<tr class = "tr_body">
+							<td>覆盖全国2576个地区（至乡镇村），能下订单的地区都可以免费送货上门。</td>
+							<td></td>
+							<td>支持从实际收货之日起7日内可以退换货，15日内可以换货（不含用户个人原因造成的）。</td>
+						</tr>
+				
+					</tbody>
+				</table>
+			</div>
+	
+
+
+
+			<!-- 评价与晒单 -->
+			<div class = "goods_cont intro_commen" style="display: none">
+				<img src= "image/shopping/111.png" />
+			</div>
+
+
+
+
+		</div>
+
+		<div class = "introduce_con_two">
+			<p>申明：</p>
+			<p>海尔商城所有产品均为海尔集团官方正品，产品资料均来源于官方数据。因个别产品在实际企划、生产等环节为进一步提升优化品质，对产品细节、包装、产地或者一些附件会稍有优化改进，海尔商城会尽量保证产品信息准确，但不能确保客户收到的货物与商城图片、产地、附件说明完全一致。若本商城没有及时更新，请大家谅解!<a href="#">欢迎大家纠错！ </a> </p>
+			<p>权利声明：</p>
+			<p>海尔商城上的所有商品信息、客户评价、商品咨询、网友讨论等内容，是海尔商城重要的经营资源，未经许可，禁止非法转载使用。</p>
+		</div>
+
+
+	</div>
+<!-- 售后服务 -->
+	<div class = "main_six">
+		<div class = "main_six_con" >
+			<div class = "main_six_left">
+				<p>售后服务和保修政策</p>
+				<p>
+					<a href="#">冰箱冰柜</a> |
+					<a href="#">洗衣机</a> |
+					<a href="#">彩电</a> |
+					<a href="#">空调</a> |
+					<a href="#">热水器</a> |
+					<a href="#">电脑</a> | 
+					<a href="#">厨房电器</a> |
+					<a href="#">生活小家电</a> |
+					<a href="#">手机数码</a>
+				</p>
+			</div>
+			<div class = "main_six_right">
+				<a href = "#"><span>&nbsp;</span>微信客服
+					<img src = "image/icon/wechat.png"/>
+				</a>
+				<a href = "#"><span>&nbsp;</span>在线客服</a>
+			</div>
+		</div>
+	</div>
+	<!-- more -->
+	<div class = "main_seven">
+		<div class = "main_seven_con">
+			<div class = "main_seven_one">
+				<p>购物指南</p>
+				<a href="#">注册登录</a>
+				<a href="#">密码相关</a>
+				<a href="#">购物流程</a>
+				<a href="#">交易条款</a>
+				<a href="#">品牌大全</a>	
+			</div>
+			<div class = "main_seven_one own" >
+				<p>支付方式</p>
+				<a href="#">货到付款</a>
+				<a href="#">网银支付</a>
+				<a href="#">发票说明</a>
+				<a href="#">电子发票</a>
+			</div>
+			<div class = "main_seven_one main_seven_three own">
+				<p>物流配送</p>
+				<a href="#">日日顺配送</a>
+				<a href="#">配送服务查询</a>
+				<a href="#">全场免运费</a>
+				<a href="#" style="padding-right: 60px;">送装同步</a>
+				<a href="#">送货入户 违约赔付</a>	
+			</div>
+			<div class = "main_seven_one main_seven_three own">
+				<p>售后服务</p>
+				<a href="#" style="padding-right:24px;">售后服务政策</a>
+				<a href="#">退换货说明</a>
+				<a href="#">安装/维修</a>
+				<a href="#" style="padding-left:11px;">服务时效承诺</a>
+				<a href="#">咨询投诉</a>	
+			</div>
+			<div class = "main_seven_one own">
+				<p>特色服务</p>
+				<a href="#">价格保护</a>
+				<a href="#">半日达</a>
+			</div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class = "footer">
+		
+		<p>
+			<a href="#">购物流程</a> |
+			<a href="#">配送方式</a> |
+			<a href="#">付款方式</a> |
+			<a href="#">售后服务</a> |
+			<a href="#">投诉建议</a> |
+			<a href="#">友情链接</a> |
+			<a href="#">加入我们</a> |
+			<a href="#">海尔知识堂</a>
+		</p>
+		<p>网站备案/许可证号：鲁ICP备09096283号</p>
+		<p>Copyright©2000-2016 海尔集团电子商务有限公司 All Rights Reserved</p>
+		<p>
+			<a href="#"><img src = "image/login/7.png"/></a>
+			<a href="#"><img src = "image/login/3.png"/></a>
+			<a href="#"><img src = "image/login/4.png"/></a>
+			<a href="#"><img src = "image/login/5.png"/></a>
+			<a href="#"><img src = "image/login/6.png"/></a>
+			<a href="#"><img src = "image/login/1.jpg"/></a>
+			<a href="#"><img src = "image/login/2.jpg"/></a>
+		</p>
+	</div>
+
+    <!-- 遮罩层等等 -->
+	<div class = "body_mask">
+		
+	</div>
+	<div class = "body_pic_show">
+		<div class = "show_pic_con">
+			<ul class= "show_pic_ul">
+				
+			</ul>
+			<div class = "show_num"></div>
+		</div>
+		<div class = "close">X</div>
+		<span class = "font font_three font_three_last"><i class="iconfont icon-zuojiantou " id ="icon_left_last"></i></span>
+		<span class = "font font_four font_four_last"><i class="iconfont icon-youjiantou " id="icon_right_last"></i></span>
+	</div>
+
+<!-- 回到顶部 -->
+	<div class = "s_tool">
+		<div class = "erwm">
+			<img src = "image/icon/ewm0917.png" />
+		</div>
+		<a href ="#" class = "online_service"></a>
+		<a  href ="#" class = "tell_all"></a>
+		<a class = "back_top" href ="#"></a>
+	</div>
+
+</body>
+</html>

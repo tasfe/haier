@@ -1,0 +1,207 @@
+/*header*/
+#aaa{
+	float:right;
+	font-size: 14px;
+	color: #005aaa;
+	margin-top: 30px;	
+}
+
+/*普通用户*/
+.main{
+	width: 770px;
+	margin:0 auto;
+	position: relative;
+}
+.main h2{
+	width:100%;
+	text-align: center;
+	font-weight: normal;
+	font-size:32px;
+	padding: 15px 0 15px 0;
+	color:#606060;
+}
+.two{
+	margin:10px 0 22px 257px;
+	font-size: 12px;
+	color:#606060;
+	height: 16px;
+}
+.two label{
+	padding-left: 5px;
+	margin-right: 35px;
+	display: inline-block;
+}
+.two label:hover{
+	color: #005aaa;
+}
+
+#commen label,#bussiness label{
+	float: left;
+	width: 73px;
+	text-align: right;
+	padding-right: 12px;
+	margin-left: 173px;
+	font-size: 14px;
+	color:#606060;
+	padding-top:10px;
+}
+#commen input,#bussiness input{
+	width: 200px;
+	padding:10px 14px;
+	height: 18px;
+	line-height: 18px;
+	border: 1px #e6e6e6 solid;
+	color: #aca4a4;
+	margin-bottom: 12px;
+	outline: none;
+	border-radius: 3px;
+}
+#commen a{
+	margin:0 0 12px 257px;
+	display: block;
+	cursor: pointer;
+	color:#005aaa;
+	font-size: 14px;
+}
+#commen .phone_r,#commen #box:hover,#bussiness #box1:hover,#commen p:nth-of-type(6) a:hover,#aaa:hover,#intro p:last-of-type a:hover{
+	text-decoration: underline;
+}
+#code_one{
+	position: relative;
+}
+#showcode,#showcode_one{
+	width: 95px;
+	height: 35px;
+	background: gray;
+	position: absolute;
+	left:391px;
+	top:309px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+}
+#commen #check,#bussiness #check1{
+	float:left;
+	margin-left: 257px;
+	width: 13px;
+	height: 13px;
+	margin-top: 3px;
+}
+#commen #box{
+	padding-left:20px;
+}
+#commen p:nth-of-type(5){
+	margin-top: 8px;
+}
+
+#submit_commen,#bussiness #submit_bussiness{
+	width: 231px;
+	height: 40px;
+	background: #005aa9;
+	border:none;
+	color: white;
+	font-size: 16px;
+	border-radius: 3px;
+	margin:4px 0 60px 257px;
+	cursor: pointer;
+}
+/*intro*/
+#intro{
+	width: 232px;
+	padding: 15px 10px 5px 15px;
+	background: #f6f6f6;
+	position: absolute;
+	right: -118px;
+	top:30px;
+}
+#intro p:nth-of-type(1),#intro p:nth-of-type(3){
+	color: #797979;
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+#intro p:nth-of-type(2),#intro ul{
+	color: #b8b8b8;
+	font-size: 14px;
+	line-height: 22px;
+	padding-bottom: 8px;
+}
+#intro ul li{ 
+	list-style-type:square;
+	text-indent: -4px;
+}
+#intro ul{
+	margin-left: 16px;
+}
+#intro p:last-of-type a{
+	margin-left: 149px;
+	font-size: 13px;
+	color:#606060;
+}
+#intro p:last-of-type a:hover{
+	color:#005aaa;
+	cursor: pointer;
+}
+
+/*顺逛*/
+#showcode_one{
+	left:391px;
+	top:175px;
+}
+#phone_code{
+	width: 86px;
+	height: 36px;
+	background: #25bdff;
+	color: white;
+	position: absolute;
+	left:400px;
+	top:226px;
+	border: none;
+	outline: none;
+	font-size: 12px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+#bussiness p:nth-of-type(4){
+	margin:22px 0 14px 174px;
+	font-size: 14px;
+	color:#606060;
+	background: url(../image/login/icon2.png) no-repeat 215px -184px;
+}
+#detail_adr{
+	width: 200px;
+	border-radius: 3px;
+	padding: 10px 14px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	border:1px #e6e6e6 solid;
+	color: #aaa;
+	outline: none;
+	line-height: 19px;
+	height: 80px;
+}
+#bussiness #check1{
+	margin:6px 0 0 175px;
+}
+#bussiness #box1{
+	font-size: 14px;
+	color: #606060;
+	padding-left: 10px;
+}
+#bussiness #box1:hover{
+	color: #005aaa;
+}
+#bussiness #submit_bussiness{
+	font-size: 14px;
+	width: 126px;
+	height: 40px;
+	margin:28px 0 50px 257px;
+}
+
+/*错误信息提示*/
+.active{
+	background: url(../image/login/icon2.png) no-repeat 0px 2px;
+	padding-left: 18px;
+	font-size: 10px;
+	margin-left: 4px;
+	color: #606060;
+}

@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		// window.onload = function(){
+			var arr = [{
+				id:"热卖",
+				children:[{
+							img:"image/refrigerator/2.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/washingM/6.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/airConditioning/3.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/refrigerator/3.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/airConditioning/6.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/domestic/11.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/refrigerator/12.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/washingM/9.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/tv/5.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/9.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/calorifier/7.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/kitchen/1.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						}]
+					},{
+						id:"冰箱冷柜",
+						children:[{
+							img:"image/refrigerator/1.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/refrigerator/2.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/refrigerator/3.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/refrigerator/4.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/refrigerator/5.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/refrigerator/6.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/refrigerator/7.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/refrigerator/8.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/refrigerator/9.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/refrigerator/10.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/refrigerator/11.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						},{
+							img:"image/refrigerator/12.png",
+							name:"海尔冰箱",
+							model:"BCD-458WDVMU1",
+							detail:"【618惊喜返场】①花呗6期免息②晒图评论返金券  活动时间6月21日-6月23日，活动价4299元！无货地区接受全款预定，最快7个工作日发货！",
+							price:"￥4299",
+							core:"干湿分储 66.6cm超薄 双变频技术"
+						}]
+					},{
+						id:"洗衣机",
+						children:[{
+							img:"image/washingM/1.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/washingM/2.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/washingM/3.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/washingM/4.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/washingM/5.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/washingM/6.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/washingM/7.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/washingM/8.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/washingM/9.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/washingM/10.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/washingM/11.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						},{
+							img:"image/washingM/12.png",
+							name:"海尔洗烘一体",
+							model:"EG8014HB39GU1",
+							detail:"手机智能 洗烘一体  空气净化洗 BLDC无刷变频电机 AMT防霉抗菌窗垫 除菌洗 中途可加衣 时尚香槟金外观",
+							price:"￥3599",
+							core:"智能变频 洗烘一体 中途加衣 手机智控"
+						}]
+					},{
+						id:"电视机",
+						children:[{
+							img:"image/tv/1.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/2.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/3.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/4.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/5.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/6.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/7.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/8.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/9.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/10.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/11.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						},{
+							img:"image/tv/12.png",
+							name:"MOOKA4K电视",
+							model:"U55Q81",
+							detail:"55英寸曲面电视，4K高清3840*2160分辨率，4000R黄金曲率，纤薄机身，蓝光影院，让生活变得“智”趣盎然",
+							price:"￥3999",
+							core:"55英寸曲面4k智能液晶电视"
+						}]
+					},{
+						id:"空调",
+						children:[{
+							img:"image/airConditioning/1.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/airConditioning/2.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/airConditioning/3.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/airConditioning/4.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/airConditioning/5.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/airConditioning/6.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/airConditioning/7.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/airConditioning/8.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/airConditioning/9.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/airConditioning/10.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/airConditioning/11.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						},{
+							img:"image/airConditioning/12.png",
+							name:"小超人高效定频壁挂式空调",
+							model:"KFR-25GW/10FAA13XU1套机",
+							detail:"1匹小超人智能空调；简单三步绑定手机APP，远程遥控，便捷生活，智能享受；快速制冷，一键智能，健康清洁；一键PMV，即得舒适；适用14平方米",
+							price:"￥1799",
+							core:"10-14㎡适用  手机远程遥控"
+						}]
+					},{
+						id:"热水器",
+						children:[{
+							img:"image/calorifier/1.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/calorifier/2.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/calorifier/3.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/calorifier/4.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/calorifier/5.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/calorifier/6.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/calorifier/7.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/calorifier/8.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/calorifier/9.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/calorifier/10.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/calorifier/11.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						},{
+							img:"image/calorifier/12.png",
+							name:"海尔燃气热水器",
+							model:"JSQ25-13WT5(12T)",
+							detail:"13升专利安防智能恒温燃气热水器 防煤气中毒 根据用水模式自动调节水温 宽频智能恒温 ±0.5℃精准控温",
+							price:"￥1999",
+							core:"13升专利安防智能恒温燃气热水器"
+						}]
+					},{
+						id:"厨房电器",
+						children:[{
+							img:"image/kitchen/1.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						},{
+							img:"image/kitchen/2.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						},{
+							img:"image/kitchen/3.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						},{
+							img:"image/kitchen/4.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						},{
+							img:"image/kitchen/5.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						},{
+							img:"image/kitchen/6.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						},{
+							img:"image/kitchen/7.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						},{
+							img:"image/kitchen/8.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						},{
+							img:"image/kitchen/9.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						},{
+							img:"image/kitchen/10.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						},{
+							img:"image/kitchen/11.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						},{
+							img:"image/kitchen/12.png",
+							name:"海尔烟灶套系",
+							model:"CXW-200-E900T6(T)+JZT-QE5B1(12T)",
+							detail:"智能控制，18m³大风量，全不锈钢机身，一体成型集烟腔，触摸按键4.1KW大火力鸳鸯灶，五重防爆钢化玻璃，爆炒煲汤两相宜，满足烹饪需求！",
+							price:"￥2299",
+							core:"手机智能控制  18m³大风量"
+						}]
+					},{
+						id:"生活家电",
+						children:[{
+							img:"image/domestic/1.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/domestic/2.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/domestic/3.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/domestic/4.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/domestic/5.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/domestic/6.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/domestic/7.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/domestic/8.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/domestic/9.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/domestic/10.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/domestic/11.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						},{
+							img:"image/domestic/12.png",
+							name:"海尔智能私人影院",
+							model:"小帅UFO互联网电影机BP2352X",
+							detail:"小帅UFO智能私人影院，IMAX影院巨幕效果，300英寸投影设计，支持3D播放，四核CPU、双核GPU，A7处理器，8G存储空间，安卓智能4.4操作系统，双频WIFI，持久续航10400mAh大电量。",
+							price:"￥1299",
+							core:"小帅UFO智能私人影院"
+						}]
+					}
+			];
+
+			var str = JSON.stringify(arr);
+			document.write(str);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

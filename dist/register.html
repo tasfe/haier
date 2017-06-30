@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	<link rel="stylesheet" type="text/css" href="css/commen.css">
+	<script type="text/javascript" src = "js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src = "js/jquery.cookie.js"></script>
+	<script type="text/javascript" src = "js/register.js"></script>
+	</script>
+</head>
+<body>
+	<!-- header -->
+	<div class = "header">
+		<div class = logo>
+			<div class = "one">
+				<a class = "logo1" href="index.html" ,title = "海尔商城-买家电更放心">
+					<img  src = "image/login/index.png"/>
+				</a>
+				<img  src = "image/login/slogan.png" class = "slogan"/>
+			</div>
+			<a href="login.html" id = "aaa">已有海尔商城账号登录 ></a>
+		</div>
+	</div>
+	<!-- body -->
+	<div class = "main">
+		<h2>欢迎注册海尔商城</h2>
+		<p class = "two">
+			<input type = "radio" id = "register_commen" name ="register"/><label for="register_commen">普通用户注册</label>
+			<input type = "radio" id = "register_bussiness" name ="register" checked="checked" /><label for="register_bussiness">顺逛微店主注册</label>
+		</p>
+		<div id = "intro">
+			<p>什么是顺逛微店主？</p>
+			<p>
+                        顺逛是海尔集团旗下官方微店平台。旨在精选各行业优质品牌及商家资源，甄选精品和爆品，为微店主搭建专属的“0成本创业平台”，提供自主创业良机，实现微店主、品牌商、平台多方共创共赢。
+                    </p>
+             <p>顺逛微店主有哪些特权？</p>
+             <ul>
+             	<li>创业0风险</li>
+             	<li>产品保障</li>
+             	<li>物流保障（免运费、按约送达、免费安装、体验满意后再付款、15天无理由退货）</li>
+             	<li>售后保障</li>
+             	<li>专业免费培训</li>
+             	<li>品牌授权</li>
+             </ul>
+             <p><a>查看更多>></a></p>
+		</div>
+		<div id = "commen" style = "display:none">	
+			<p><label id="mail_label">邮箱</label><input type = "text" id = "email" placeholder = "请输入邮箱" class = "input_commen"/><span id="email_error" >&nbsp;</span></p>
+			<a href="#" class = "phone_r">用手机号码注册</a>
+			<p><label>登录密码</label><input type = "password" id = "password_one" placeholder = "请输入登录密码" class = "input_commen"/><span id="pass_one_error">&nbsp;</span></p>
+			<p><label>确认密码</label><input type = "password" id = "password_two" placeholder = "请再次输入登录密码" class = "input_commen"/><span id="pass_two_error">&nbsp;</span></p>
+			<p ><label>验证码</label><input type = "text" id = "code_one" placeholder = "请输入验证码" class = "input_commen"/><button id = "showcode" class = "showcode"></button><span id="code_one_error" >&nbsp;</span></p>
+			<p><input type = "checkbox" id = "check" checked = "checked" /><a href="#" id = "box">同步开通海尔快捷账号</a></p>
+			<p><a>《海尔商城用户服务协议》</a></p>
+			<button id = "submit_commen">同意以上协议，马上注册</button>
+		</div>
+		<div id = "bussiness" >
+			<p><label>手机号码</label><input type = "text" id = "phone" class = "input_commen"  placeholder = "建议填写常用手机号"/><span id="phone_error">&nbsp;</span></p>
+			<p><label>验证码</label><input type = "text" id = "code_two" class = "input_commen" placeholder = "输入正确验证码"/><button id = "showcode_one" class = "showcode"></button><span id="code_two_error">&nbsp;</span></p>
+			<p><label>手机验证码</label><input type = "text" id = "code_three" class = "input_commen"  placeholder = "输入手机验证码"/><button id = "phone_code">发送验证码</button><span id="code_three_error">&nbsp;</span></p>
+			<p>成为顺逛微店主请补全以下个人信息<span>&nbsp;</span></p>
+			<p><label>设置密码</label><input type = "password" id = "password_three" class = "input_commen" placeholder = "请输入密码"/><span id="password_three_error">&nbsp;</span></p>
+			<p><label>确认密码</label><input type = "password" id = "password_four" class = "input_commen" placeholder = "请输入确认密码"/><span id="password_four_error">&nbsp;</span></p>
+			<p><label>输入姓名</label><input type = "text" id = "name" class = "input_commen" placeholder = "请输入您的姓名"/><span id="name_error">&nbsp;</span></p>
+			<p><label>选择地址</label><input type = "text" id = "adress" /></p>
+			<p><label>详细地址</label><textarea id = "detail_adr" style="resize: none;" class = "input_commen" placeholder="建议填写详细地址，如街道名称、门牌号码、楼层、房间号等。"></textarea><span id = "detail_adr_error">&nbsp;</span></p>
+			<p><label>推荐码</label><input id = "text" class = "input_commen" placeholder="如有推荐码，请输入" id = "recommend" /></p>
+			<p><input type = "checkbox" id = "check1" checked="checked" /><a href="#" id = "box1">我已阅读并同意《海尔商城用户注册协议》</a></p>
+			<p><input type ="button" value="注册顺逛微店主" id = "submit_bussiness"/></p>
+		</div>
+	</div>
+	<div class = "footer">
+		
+		<p>
+			<a href="#">购物流程</a> |
+			<a href="#">配送方式</a> |
+			<a href="#">付款方式</a> |
+			<a href="#">售后服务</a> |
+			<a href="#">投诉建议</a> |
+			<a href="#">友情链接</a> |
+			<a href="#">加入我们</a> |
+			<a href="#">海尔知识堂</a>
+		</p>
+		<p>网站备案/许可证号：鲁ICP备09096283号</p>
+		<p>Copyright©2000-2016 海尔集团电子商务有限公司 All Rights Reserved</p>
+		<p>
+			<a href="#"><img src = "image/login/7.png"/></a>
+			<a href="#"><img src = "image/login/3.png"/></a>
+			<a href="#"><img src = "image/login/4.png"/></a>
+			<a href="#"><img src = "image/login/5.png"/></a>
+			<a href="#"><img src = "image/login/6.png"/></a>
+			<a href="#"><img src = "image/login/1.jpg"/></a>
+			<a href="#"><img src = "image/login/2.jpg"/></a>
+		</p>
+	</div>
+
+
+</body>
+</html>
